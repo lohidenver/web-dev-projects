@@ -1,0 +1,58 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: rgb(252, 236, 215);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app-container {
+  background-color: rgb(252, 246, 238);
+  padding: 20px;
+  border: 1px solid rgb(70, 70, 70);
+  color: rgb(155, 155, 155);
+  font-weight: 300;
+  border-radius: 10px;
+}
+
+.units-container {
+  /* background-color: rgb(220, 220, 220); */
+  display: flex;
+  justify-content: space-between;
+}
+
+.unit-container {
+  width: 200px;
+  margin: 10px;
+}
+
+input {
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 5px 5px 0px 0px;
+  width: 200px;
+  background-color: transparent;
+  color: rgb(70, 70, 70);
+}
+
+select {
+  width: 200px;
+  font-size: 30px;
+  border-radius: 0 0 5px 5px;
+  background-color: rgb(70, 70, 70);
+  color: rgb(255, 255, 255);
+}
+
+select:focus,
+input:focus {
+  outline: none;
+}

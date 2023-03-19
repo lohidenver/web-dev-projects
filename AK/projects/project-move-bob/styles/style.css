@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(70, 130, 180);
+}
+
+.bob {
+    position: absolute;
+    bottom: 100px;
+    left: 100px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: rgb(196, 203, 139);
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.eye-container {
+    position: relative;
+    top: 50px;
+    left: 33px;
+    display: flex;
+}
+
+.eye {
+    height: 35px;
+    width: 35px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    margin: 3px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.eye:after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+    position: relative;
+    top: 12px;
+    left: 18px;
+}

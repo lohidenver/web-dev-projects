@@ -1,0 +1,39 @@
+.contact-section {
+    text-align: center;
+    padding: 250px;
+}
+
+.contact-section ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px 0px;
+}
+
+section a {
+    color: rgb(205, 205, 97);
+}
+
+@media screen and (max-width: 1000px) {
+    .contact-section {
+        padding: 250px 100px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contact-section {
+        padding: 250px 50px;
+    }
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+}
+
+footer a {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}

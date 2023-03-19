@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(250, 238, 230);
+}
+
+.heart {
+  background-color: var(--c);
+  display: inline-block;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  height: var(--s);
+  width: var(--s);
+  transform: rotate(45deg);
+}
+
+.heart:before,
+.heart::after {
+  content: "";
+  background-color: var(--c);
+  border-radius: 50%;
+  height: var(--s);
+  width: var(--s);
+  position: absolute;
+}
+
+.heart:before {
+  top: var(--hump);
+  left: 0;
+}
+
+.heart::after {
+  top: 0;
+  left: var(--hump);
+}

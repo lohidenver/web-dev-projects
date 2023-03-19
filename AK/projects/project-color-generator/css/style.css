@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+    background-color: cornsilk;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 15vh;
+}
+
+header .logo {
+    color: rgb(65, 162, 129);
+    margin: 10px;
+}
+
+header .main-section {
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    border-bottom: 1px solid rgb(76, 83, 76);
+    align-items: center;
+}
+
+header #spawn-button {
+    border: 2px solid rgb(215, 135, 255);
+    background-color: rgb(225, 225, 255);
+    padding: 13px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+header #spawn-button:hover {
+    border: 2px solid rgb(34, 0, 35);
+    background-color: rgb(175, 175, 205);
+    color: white;
+    transform: translate(5px, 3px);
+}
+
+header #spawn-button:active {
+    border: 2px solid rgb(17, 1, 17);
+    background-color: rgb(52, 52, 74);
+}
+
+header .sub-section {
+    height: 5vh;
+    color: rgb(63, 63, 63);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.colors-container {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    width: 100vw;
+    height: 85vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.colors-container div {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    background-color: rgb(2, 106, 198);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

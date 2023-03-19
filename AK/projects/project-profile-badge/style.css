@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #0c1123;
+    /* background-image: url(https://media.wired.com/photos/5ca648a330f00e47fd82ae77/16:9/w_1391,h_782,c_limit/Culture_Matrix_Code_corridor.jpg); */
+    background-position: center;
+    background-size: cover;
+}
+
+.card {
+    position: relative;
+    background: #131b33;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.card span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, transparent, #fff);
+    animation: animate_one 2s linear infinite;
+}
+
+@keyframes animate_one {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.card span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, #fff);
+    animation: animate_two 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animate_two {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+.card span:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to left, transparent, #fff);
+    animation: animate_three 2s linear infinite;
+}
+
+@keyframes animate_three {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.card span:nth-child(4) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to top, transparent, #fff);
+    animation: animate_four 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animate_four {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+.card #profile-image {
+    position: relative;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    top: 5%;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.card .name {
+    color: #fff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 10%;
+}
+
+hr {
+    width: 90%;
+    margin: auto;
+    position: relative;
+    top: 15%;
+    background-color: #0c1123;
+    border: none;
+    height: 2px;
+}
+
+.links {
+    position: relative;
+    top: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a {
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.links img {
+    height: 40px;
+    width: 40px;
+    background-color: #fff;
+    overflow: hidden;
+}

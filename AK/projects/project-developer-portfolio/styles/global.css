@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(41, 43, 53);
+    font-family: Lato, Times, serif;
+}
+
+nav {
+    background-color: rgb(55, 72, 95);
+    /* width: 100vw;
+    position: fixed; */
+}
+
+nav .tech-container img {
+    /* height: 50px; */
+    height: 30px;
+}
+
+nav .nav-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav h3 {
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    margin: 0 30px 0 0;
+}
+
+nav .logo {
+    height: 30px;
+    margin: 0 10px 0 0;
+}
+
+nav .hamburger-button {
+    border: none;
+    background-color: transparent;
+}
+
+nav .menu-container,
+.tech-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+nav .nav-link {
+    color: rgb(216, 218, 221);
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+nav .nav-link:hover {
+    background-color: rgb(57, 57, 57);
+}
+
+.hidden {
+    display: none !important;
+}
+
+.hamburger-list-container .nav-link {
+    display: block;
+}
+
+nav .hamburger-button {
+    border: none;
+    background-color: transparent;
+}
+
+
+/* --- MEDIA QUEIRES*/
+
+@media (max-width: 1000px) {
+    nav h3 {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .menu-container .nav-link {
+        display: none;
+    }
+    /* Hamburger Button Style START */
+    nav .menu-container button div {
+        display: block;
+        cursor: pointer;
+        border-radius: 10px;
+        border: none;
+        /* background-color: transparent; */
+    }
+    .bar1,
+    .bar2,
+    .bar3 {
+        /* width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.5s; */
+        width: 21px;
+        height: 3px;
+        background-color: rgb(233, 233, 233);
+        margin: 2px 0;
+        transition: 0.5s;
+    }
+    .change .bar1 {
+        /* transform: translate(0, 11px) rotate(-45deg); */
+        transform: translate(0, 5px) rotate(-45deg);
+        /* background-color: rgb(255, 0, 0); */
+        border: none;
+    }
+    .change .bar2 {
+        opacity: 0;
+    }
+    .change .bar3 {
+        /* transform: translate(0, -11px) rotate(45deg); */
+        transform: translate(0, -5px) rotate(45deg);
+        /* background-color: rgb(255, 0, 0); */
+        border: none;
+    }
+    /* Hamburger Button styling FINISH */
+}
+
+footer {
+    background-color: rgb(80, 100, 110);
+    display: flex;
+    justify-content: flex-end;
+    padding: 50px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+section {
+    color: rgb(222, 216, 216);
+}
+
+section h3 {
+    font-size: 30px;
+    margin: 0;
+}
+
+section a {
+    text-decoration: none;
+    color: rgb(222, 216, 216);
+}
+
+h1 {
+    font-size: 70px;
+    margin: 0px;
+}
+
+p {
+    font-size: 16px;
+}

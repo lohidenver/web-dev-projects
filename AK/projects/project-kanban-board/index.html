@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanban</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="info-container">
+            <h1 class="title">⏧ Kanban Money Board</h1>
+            <p>A place to organize bills to completion</p>
+        </div>
+        <form action="#" class="input-container" method="post">
+            <div class="bill-fields">
+                <input type="text" id="bill-title" placeholder="Bill Name..." required="required" />
+
+                <input type="date" id="bill-due" placeholder="Date due..." required="required" />
+                <div class="bill-amount">
+                    <span class="currency">$</span>
+                    <input type="number" min="0" max="3000" step=".01" name="bill-amount" id="bill-amount" required="required" />
+                </div>
+            </div>
+            <input type="submit" value="Submit" id="bill-submit" />
+        </form>
+        <div class="error-container"></div>
+    </header>
+    <section class="column-container">
+        <div class="bill-column" id="unpaid">
+            <h3>✓ Unpaid <span id="unpaid-total"></span></h3>
+            <hr class="custom-hr" />
+            <div class="bill-list" id="bill-list0"></div>
+        </div>
+        <div class="bill-column" id="pending">
+            <h3>✓ Pending</h3>
+            <hr class="custom-hr" />
+            <div class="bill-list" id="bill-list1"></div>
+        </div>
+        <div class="bill-column" id="complete">
+            <h3>✓ Paid</h3>
+            <hr class="custom-hr" />
+            <div class="bill-list" id="bill-list2"></div>
+        </div>
+    </section>
+    <!--  -->
+    <script src="app.js"></script>
+</body>
+
+</html>

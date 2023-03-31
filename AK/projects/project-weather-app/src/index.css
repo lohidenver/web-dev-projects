@@ -1,0 +1,107 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    color: rgb(60, 60, 60);
+    background-color: rgb(211, 211, 232);
+}
+
+.weather-app {
+    width: 700px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgb(255, 255, 255, 0.5);
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+
+.weather-app .cards-container {
+    border-top: 1px solid rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+}
+
+.weather-app .card-container {
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather-app .today-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.weather-app .unit-container {
+    margin: 30px 10px 0 10px;
+}
+
+.weather-app .unit-container button {
+    border: none;
+    background-color: rgb(255, 255, 255, 0.5);
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px 5px 5px 5px;
+    margin: 15px;
+    text-align: right;
+    height: 30px;
+    width: 30px;
+}
+
+.weather-app .unit-container button:hover {
+    transform: translate(1px 1px);
+    transform: scale(1.5);
+    box-shadow: 0 0 3px rgb(34, 37, 110);
+    color: rgb(46, 46, 90);
+}
+
+.weather-app .unit-container button:active {
+    background-color: rgb(255, 255, 255, 0.7);
+}
+
+.weather-app .today-container svg {
+    transform: scale(5);
+    margin: 40px 40px 0 0;
+}
+
+.weather-app .today-container svg path {
+    fill: lightsteelblue;
+}
+
+.card-container {
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: lightblue;
+    text-align: center;
+}
+
+.card-container:hover {
+    transform: scale(1.2);
+}
+
+.daily-icon {
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.weather-app p {
+    margin: 10px;
+}
+
+.temp {
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 05px;
+    background-color: aliceblue;
+}
+
+.greyed {
+    color: lightblue;
+}
